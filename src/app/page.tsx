@@ -22,7 +22,6 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import Image from "next/image"
 
-// Componente para blob orgânico animado
 function OrganicBlob({ className, delay = 0 }: { className?: string; delay?: number }) {
   return (
     <motion.div
@@ -669,7 +668,7 @@ export default function RefinedConstrutoraLanding() {
                     ))}
                   </div>
 
-                  <p className="text-slate-600 mb-8 italic font-light text-lg leading-relaxed">"{testimonial.text}"</p>
+                  <p className="text-slate-600 mb-8 italic font-light text-lg leading-relaxed">{'"'}{testimonial.text}{'"'}</p>
 
                   <div className="border-t border-slate-200/50 pt-6">
                     <p className="font-medium text-slate-700 text-lg">{testimonial.name}</p>
@@ -682,7 +681,6 @@ export default function RefinedConstrutoraLanding() {
         </div>
       </section>
 
-      {/* Certificações e Parceiros */}
       <section className="py-32 bg-gradient-to-b from-purple-50/30 to-transparent">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <motion.div
@@ -730,7 +728,6 @@ export default function RefinedConstrutoraLanding() {
         id="contato"
         className="py-32 bg-gradient-to-br from-slate-900 via-purple-900/80 to-blue-900/80 relative overflow-hidden"
       >
-        {/* Elementos orgânicos de fundo */}
         <div className="absolute inset-0 overflow-hidden">
           <OrganicBlob
             className="top-[-20%] right-[-15%] w-96 h-96 bg-gradient-to-br from-purple-400/10 to-pink-400/10"
@@ -859,7 +856,7 @@ export default function RefinedConstrutoraLanding() {
               <p className="text-slate-500 mb-6 font-light leading-relaxed">
                 Construindo com excelência há mais de 25 anos.
               </p>
-              <p className="text-sm text-slate-400">CNPJ: 12.345.678/0001-90</p>
+              <p className="text-sm text-slate-400">CNPJ: 12.121.121/0001-90</p>
             </motion.div>
 
             <motion.div
@@ -876,11 +873,11 @@ export default function RefinedConstrutoraLanding() {
                 </p>
                 <p className="flex items-center">
                   <Mail className="w-4 h-4 mr-3 text-purple-400" />
-                  contato@construtorapro.com.br
+                  contato@construtora.com.br
                 </p>
                 <p className="flex items-center">
                   <MapPin className="w-4 h-4 mr-3 text-purple-400" />
-                  São Paulo, SP
+                  São Luís, MA
                 </p>
               </div>
             </motion.div>
